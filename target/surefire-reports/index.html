@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SamsClub_Mobile_API">
+              <span class="suite-name border-failed">SamsClub Mobile API</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SamsClub_Mobile_API">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SamsClub_Mobile_API">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SamsClub_Mobile_API">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SamsClub_Mobile_API">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SamsClub_Mobile_API">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SamsClub_Mobile_API">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SamsClub_Mobile_API">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="hide-methods failed suite-SamsClub_Mobile_API"> (hide)</a> <!-- hide-methods failed suite-SamsClub_Mobile_API -->
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="show-methods failed suite-SamsClub_Mobile_API"> (show)</a> <!-- show-methods failed suite-SamsClub_Mobile_API -->
+                    </span>
+                    <div class="method-list-content failed suite-SamsClub_Mobile_API">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.LoginTest" hash-for-method="loginWithInvalidEmail">loginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SamsClub_Mobile_API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="hide-methods skipped suite-SamsClub_Mobile_API"> (hide)</a> <!-- hide-methods skipped suite-SamsClub_Mobile_API -->
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="show-methods skipped suite-SamsClub_Mobile_API"> (show)</a> <!-- show-methods skipped suite-SamsClub_Mobile_API -->
+                    </span>
+                    <div class="method-list-content skipped suite-SamsClub_Mobile_API">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.LoginTest" hash-for-method="loginWithInvalidEmail">loginWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SamsClub_Mobile_API -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="hide-methods passed suite-SamsClub_Mobile_API"> (hide)</a> <!-- hide-methods passed suite-SamsClub_Mobile_API -->
+                      <a href="#" panel-name="suite-SamsClub_Mobile_API" class="show-methods passed suite-SamsClub_Mobile_API"> (show)</a> <!-- show-methods passed suite-SamsClub_Mobile_API -->
+                    </span>
+                    <div class="method-list-content passed suite-SamsClub_Mobile_API">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.LoginTest" hash-for-method="loginWithInvalidPassword">loginWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.LoginTest" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.SearchItemTest" hash-for-method="searchByItemNumber">searchByItemNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SamsClub_Mobile_API" title="com.samsclub.qa.SearchItemTest" hash-for-method="searchByName">searchByName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SamsClub_Mobile_API -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SamsClub_Mobile_API" class="panel SamsClub_Mobile_API">
+          <div class="suite-SamsClub_Mobile_API-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.samsclub.qa.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidEmail">
+                  </a> <!-- loginWithInvalidEmail -->
+                  <span class="method-name">loginWithInvalidEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found [2]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.samsclub.qa.LoginTest.loginWithInvalidEmail(LoginTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:998)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1200)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SamsClub_Mobile_API-class-failed -->
+          <div class="suite-SamsClub_Mobile_API-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.samsclub.qa.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidEmail">
+                  </a> <!-- loginWithInvalidEmail -->
+                  <span class="method-name">loginWithInvalidEmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found [2]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at com.samsclub.qa.LoginTest.loginWithInvalidEmail(LoginTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SamsClub_Mobile_API-class-skipped -->
+          <div class="suite-SamsClub_Mobile_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.samsclub.qa.SearchItemTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByItemNumber">
+                  </a> <!-- searchByItemNumber -->
+                  <span class="method-name">searchByItemNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchByName">
+                  </a> <!-- searchByName -->
+                  <span class="method-name">searchByName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SamsClub_Mobile_API-class-passed -->
+          <div class="suite-SamsClub_Mobile_API-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.samsclub.qa.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidPassword">
+                  </a> <!-- loginWithInvalidPassword -->
+                  <span class="method-name">loginWithInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SamsClub_Mobile_API-class-passed -->
+        </div> <!-- panel SamsClub_Mobile_API -->
+        <div panel-name="test-xml-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/s0v0023/GitHub/samsclub-api-test-framework/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SamsClub Mobile API&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.samsclub.qa.utils.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Test Automation Suite&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.samsclub.qa.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.samsclub.qa.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.SearchItemTest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.builders.AuthRequestSpecBuilder&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.builders.AuthResponseSpecBuilder&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.builders.JSONSpecBuilder&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.builders.SearchRequestSpecBuilder&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.config.BasePath&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.config.BaseURI&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.reports.ExtentManager&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.reports.ExtentTestManager&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.requests.LoginRequest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.requests.RegisterMembershipRequest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.requests.ValidateMembershipRequest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.BaseTest&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.GSpreadSheet&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.RetryAnalyzer&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.RetryListener&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.SpreadSheet&quot;/&gt;
+      &lt;class name=&quot;com.samsclub.qa.utils.StringHelper&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Automation Suite --&gt;
+&lt;/suite&gt; &lt;!-- SamsClub Mobile API --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SamsClub Mobile API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test Automation Suite (19 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SamsClub Mobile API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SamsClub Mobile API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SamsClub_Mobile_API');
+function tableData_SamsClub_Mobile_API() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginWithValidCredentials')
+data.setCell(0, 2, 'com.samsclub.qa.LoginTest')
+data.setCell(0, 3, 2123);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithInvalidEmail')
+data.setCell(1, 2, 'com.samsclub.qa.LoginTest')
+data.setCell(1, 3, 1121);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginWithInvalidPassword')
+data.setCell(2, 2, 'com.samsclub.qa.LoginTest')
+data.setCell(2, 3, 302);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginWithInvalidEmail')
+data.setCell(3, 2, 'com.samsclub.qa.LoginTest')
+data.setCell(3, 3, 242);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'searchByItemNumber')
+data.setCell(4, 2, 'com.samsclub.qa.SearchItemTest')
+data.setCell(4, 3, 163);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchByName')
+data.setCell(5, 2, 'com.samsclub.qa.SearchItemTest')
+data.setCell(5, 3, 108);
+window.suiteTableData['SamsClub_Mobile_API']= { tableData: data, tableDiv: 'times-div-SamsClub_Mobile_API'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-SamsClub_Mobile_API">
+              </div> <!-- times-div-SamsClub_Mobile_API -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SamsClub Mobile API</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SamsClub_Mobile_API" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.samsclub.qa.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.LoginTest.loginWithInvalidEmail())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidEmail</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.LoginTest.loginWithInvalidEmail())</span>
+                <span class="method-start">2304 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginWithInvalidEmail</span>
+                <span class="method-start">2304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.LoginTest.loginWithInvalidPassword())</span>
+                <span class="method-start">2551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidPassword</span>
+                <span class="method-start">2553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.LoginTest.loginWithValidCredentials() throws java.lang.Exception)</span>
+                <span class="method-start">2855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidCredentials</span>
+                <span class="method-start">2855 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.samsclub.qa.SearchItemTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.SearchItemTest.searchByItemNumber())</span>
+                <span class="method-start">4978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchByItemNumber</span>
+                <span class="method-start">4979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init(public void com.samsclub.qa.SearchItemTest.searchByName())</span>
+                <span class="method-start">5143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchByName</span>
+                <span class="method-start">5143 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SamsClub Mobile API">
+    <listeners>
+        <listener class-name="com.samsclub.qa.utils.RetryListener" />
+    </listeners>
+    <test name="Test Automation Suite" preserve-order="true" verbose="2">
+        <packages>
+            <package name="com.samsclub.qa.*"/>
+        </packages>
+    </test>
+
+</suite>

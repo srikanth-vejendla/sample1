@@ -1,0 +1,586 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "f": {
+      "type": "string"
+    },
+    "expiresAt": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "tr": {
+      "type": "integer"
+    },
+    "errCode": {
+      "type": "string"
+    },
+    "txt": {
+      "type": "string"
+    },
+    "csf": {
+      "type": "string"
+    },
+    "s": {
+      "type": "integer"
+    },
+    "p": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tn": {
+            "type": "string"
+          },
+          "visible": {
+            "type": "boolean"
+          },
+          "promo": {
+            "type": "integer"
+          },
+          "ulpw": {
+            "type": "string"
+          },
+          "prodid": {
+            "type": "string"
+          },
+          "endDate": {
+            "type": "null"
+          },
+          "eventEndDate": {
+            "type": "null"
+          },
+          "iswti": {
+            "type": "integer"
+          },
+          "ss": {
+            "type": "integer"
+          },
+          "ft": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "prefixLabel": {
+            "type": "string"
+          },
+          "whyweloveit": {
+            "type": "string"
+          },
+          "cls": {
+            "type": "integer"
+          },
+          "sp": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "shd": {
+                  "type": "string"
+                },
+                "stxt": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shd",
+                "stxt"
+              ]
+            }
+          },
+          "isn": {
+            "type": "integer"
+          },
+          "promoContent": {
+            "type": "string"
+          },
+          "sd": {
+            "type": "string"
+          },
+          "minQty": {
+            "type": "integer"
+          },
+          "eventStartDate": {
+            "type": "string"
+          },
+          "se": {
+            "type": "array",
+            "items": {}
+          },
+          "suomplu": {
+            "type": "string"
+          },
+          "cs": {
+            "type": "string"
+          },
+          "li": {
+            "type": "string"
+          },
+          "ld": {
+            "type": "string"
+          },
+          "sa": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "vi": {
+                  "type": "string"
+                },
+                "moa": {
+                  "type": "integer"
+                },
+                "ulpw": {
+                  "type": "string"
+                },
+                "onlinePrice": {
+                  "type": "object",
+                  "properties": {
+                    "smsglg": {
+                      "type": "string"
+                    },
+                    "showMsrp": {
+                      "type": "integer"
+                    },
+                    "ev": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "msrpPrice": {
+                      "type": "string"
+                    },
+                    "ulpw": {
+                      "type": "string"
+                    },
+                    "suomplu": {
+                      "type": "string"
+                    },
+                    "finalPrice": {
+                      "type": "string"
+                    },
+                    "percentSaved": {
+                      "type": "string"
+                    },
+                    "suomsin": {
+                      "type": "string"
+                    },
+                    "iswti": {
+                      "type": "integer"
+                    },
+                    "pmns": {
+                      "type": "string"
+                    },
+                    "listPrice": {
+                      "type": "string"
+                    },
+                    "smsgst": {
+                      "type": "string"
+                    },
+                    "pmxs": {
+                      "type": "string"
+                    },
+                    "amountSaved": {
+                      "type": "string"
+                    },
+                    "pmsg": {
+                      "type": "null"
+                    },
+                    "savingType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "smsglg",
+                    "showMsrp",
+                    "ev",
+                    "msrpPrice",
+                    "ulpw",
+                    "suomplu",
+                    "finalPrice",
+                    "percentSaved",
+                    "suomsin",
+                    "iswti",
+                    "pmns",
+                    "listPrice",
+                    "smsgst",
+                    "pmxs",
+                    "amountSaved",
+                    "pmsg",
+                    "savingType"
+                  ]
+                },
+                "cfgd": {
+                  "type": "array",
+                  "items": {}
+                },
+                "id": {
+                  "type": "string"
+                },
+                "skuType": {
+                  "type": "string"
+                },
+                "subscribe": {
+                  "type": "integer"
+                },
+                "onlineInvLevels": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "ss": {
+                  "type": "integer"
+                },
+                "ft": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                },
+                "dp": {
+                  "type": "string"
+                },
+                "sva": {
+                  "type": "array",
+                  "items": {}
+                },
+                "ds": {
+                  "type": "integer"
+                },
+                "mp": {
+                  "type": "string"
+                },
+                "mo": {
+                  "type": "string"
+                },
+                "cls": {
+                  "type": "integer"
+                },
+                "n": {
+                  "type": "string"
+                },
+                "pid": {
+                  "type": "string"
+                },
+                "se": {
+                  "type": "array",
+                  "items": {}
+                },
+                "clubInv": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "in": {
+                  "type": "integer"
+                },
+                "ip": {
+                  "type": "string"
+                },
+                "li": {
+                  "type": "string"
+                },
+                "equalPrice": {
+                  "type": "integer"
+                },
+                "prc": {
+                  "type": "string"
+                },
+                "frs": {
+                  "type": "integer"
+                },
+                "am": {
+                  "type": "string"
+                },
+                "forceLogin": {
+                  "type": "integer"
+                },
+                "onlineInv": {
+                  "type": "object",
+                  "properties": {
+                    "viewOnly": {
+                      "type": "integer"
+                    },
+                    "maxQty": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "type": "integer"
+                    },
+                    "minQty": {
+                      "type": "integer"
+                    },
+                    "in": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "viewOnly",
+                    "maxQty",
+                    "status",
+                    "minQty",
+                    "in"
+                  ]
+                },
+                "clubPrice": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "pr": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "vi",
+                "moa",
+                "ulpw",
+                "onlinePrice",
+                "cfgd",
+                "id",
+                "skuType",
+                "subscribe",
+                "onlineInvLevels",
+                "ss",
+                "ft",
+                "dp",
+                "sva",
+                "ds",
+                "mp",
+                "mo",
+                "cls",
+                "n",
+                "pid",
+                "se",
+                "clubInv",
+                "in",
+                "ip",
+                "li",
+                "equalPrice",
+                "prc",
+                "frs",
+                "am",
+                "forceLogin",
+                "onlineInv",
+                "clubPrice",
+                "pr"
+              ]
+            }
+          },
+          "forceLogin": {
+            "type": "integer"
+          },
+          "pc": {
+            "type": "object",
+            "properties": {
+              "cid": {
+                "type": "string"
+              },
+              "cnm": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "cid",
+              "cnm"
+            ]
+          },
+          "ci": {
+            "type": "string"
+          },
+          "eventName": {
+            "type": "null"
+          },
+          "prodrid": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "evf": {
+            "type": "string"
+          },
+          "maxQty": {
+            "type": "integer"
+          },
+          "moa": {
+            "type": "integer"
+          },
+          "itemFlag": {
+            "type": "string"
+          },
+          "rc": {
+            "type": "integer"
+          },
+          "suomsin": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "pmns": {
+            "type": "string"
+          },
+          "dp": {
+            "type": "string"
+          },
+          "sva": {
+            "type": "array",
+            "items": {}
+          },
+          "ds": {
+            "type": "integer"
+          },
+          "f": {
+            "type": "string"
+          },
+          "mn": {
+            "type": "string"
+          },
+          "eventSkins": {
+            "type": "null"
+          },
+          "mp": {
+            "type": "string"
+          },
+          "ev": {
+            "type": "array",
+            "items": {}
+          },
+          "mo": {
+            "type": "string"
+          },
+          "n": {
+            "type": "string"
+          },
+          "ip": {
+            "type": "string"
+          },
+          "wirelessItem": {
+            "type": "boolean"
+          },
+          "r": {
+            "type": "number"
+          },
+          "frs": {
+            "type": "integer"
+          },
+          "pmxs": {
+            "type": "string"
+          },
+          "pt": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "ElectronicDelivery": {
+            "type": "string"
+          },
+          "eventStatus": {
+            "type": "integer"
+          },
+          "isVariant": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "tn",
+          "visible",
+          "promo",
+          "ulpw",
+          "prodid",
+          "endDate",
+          "eventEndDate",
+          "iswti",
+          "ss",
+          "ft",
+          "prefixLabel",
+          "whyweloveit",
+          "cls",
+          "sp",
+          "isn",
+          "promoContent",
+          "sd",
+          "minQty",
+          "eventStartDate",
+          "se",
+          "suomplu",
+          "cs",
+          "li",
+          "ld",
+          "sa",
+          "forceLogin",
+          "pc",
+          "ci",
+          "eventName",
+          "prodrid",
+          "startDate",
+          "evf",
+          "maxQty",
+          "moa",
+          "itemFlag",
+          "rc",
+          "suomsin",
+          "id",
+          "pmns",
+          "dp",
+          "sva",
+          "ds",
+          "f",
+          "mn",
+          "eventSkins",
+          "mp",
+          "ev",
+          "mo",
+          "n",
+          "ip",
+          "wirelessItem",
+          "r",
+          "frs",
+          "pmxs",
+          "pt",
+          "brand",
+          "ElectronicDelivery",
+          "eventStatus",
+          "isVariant"
+        ]
+      }
+    },
+    "ci": {
+      "type": "string"
+    },
+    "err": {
+      "type": "string"
+    },
+    "ignorableError": {
+      "type": "array",
+      "items": {}
+    },
+    "pn": {
+      "type": "string"
+    },
+    "cso": {
+      "type": "string"
+    },
+    "ps": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "f",
+    "expiresAt",
+    "status",
+    "tr",
+    "errCode",
+    "txt",
+    "csf",
+    "s",
+    "p",
+    "ci",
+    "err",
+    "ignorableError",
+    "pn",
+    "cso",
+    "ps"
+  ]
+}

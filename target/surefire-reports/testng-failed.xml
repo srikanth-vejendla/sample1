@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SamsClub Mobile API]">
+  <listeners>
+    <listener class-name="com.samsclub.qa.utils.RetryListener"/>
+  </listeners>
+  <test name="Test Automation Suite(failed)">
+    <classes>
+      <class name="com.samsclub.qa.SearchItemTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.samsclub.qa.SearchItemTest -->
+      <class name="com.samsclub.qa.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="loginWithInvalidEmail"/>
+        </methods>
+      </class> <!-- com.samsclub.qa.LoginTest -->
+    </classes>
+  </test> <!-- Test Automation Suite(failed) -->
+</suite> <!-- Failed suite [SamsClub Mobile API] -->

@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "s": {
+      "type": "integer"
+    },
+    "err": {
+      "type": "string"
+    },
+    "errCode": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "ccnt": {
+      "type": "integer"
+    },
+    "em": {
+      "type": "string"
+    },
+    "pid": {
+      "type": "string"
+    },
+    "bvUserToken": {
+      "type": "string"
+    },
+    "mbr": {
+      "type": "object",
+      "properties": {
+        "sf": {
+          "type": "string"
+        },
+        "cmpn": {
+          "type": "string"
+        },
+        "fn": {
+          "type": "string"
+        },
+        "mi": {
+          "type": "string"
+        },
+        "ln": {
+          "type": "string"
+        },
+        "mt": {
+          "type": "string"
+        },
+        "mn": {
+          "type": "string"
+        },
+        "enmn": {
+          "type": "string"
+        },
+        "ex": {
+          "type": "string"
+        },
+        "hc": {
+          "type": "string"
+        },
+        "add": {
+          "type": "object",
+          "properties": {
+            "add1": {
+              "type": "string"
+            },
+            "add2": {
+              "type": "string"
+            },
+            "add3": {
+              "type": "string"
+            },
+            "z": {
+              "type": "string"
+            },
+            "c": {
+              "type": "string"
+            },
+            "st": {
+              "type": "string"
+            },
+            "cy": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "add1",
+            "add2",
+            "add3",
+            "z",
+            "c",
+            "st",
+            "cy"
+          ]
+        },
+        "phNbrs": {
+          "type": "array",
+          "items": {}
+        },
+        "arf": {
+          "type": "integer"
+        },
+        "tef": {
+          "type": "integer"
+        },
+        "dob": {
+          "type": "string"
+        },
+        "cmc": {
+          "type": "object",
+          "properties": {}
+        },
+        "prefs": {
+          "type": "object",
+          "properties": {
+            "mp": {
+              "type": "array",
+              "items": {}
+            },
+            "np": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "mp",
+            "np"
+          ]
+        },
+        "bus": {
+          "type": "object",
+          "properties": {
+            "admem": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "admem"
+          ]
+        }
+      },
+      "required": [
+        "sf",
+        "cmpn",
+        "fn",
+        "mi",
+        "ln",
+        "mt",
+        "mn",
+        "enmn",
+        "ex",
+        "hc",
+        "add",
+        "phNbrs",
+        "arf",
+        "tef",
+        "dob",
+        "cmc",
+        "prefs",
+        "bus"
+      ]
+    }
+  },
+  "required": [
+    "s",
+    "err",
+    "errCode",
+    "status",
+    "ccnt",
+    "em",
+    "pid",
+    "bvUserToken",
+    "mbr"
+  ]
+}
